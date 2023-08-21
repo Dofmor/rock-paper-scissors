@@ -22,4 +22,9 @@ function playRound (playerSelection, computerSelection) {
         return "You lose! Rock beats Scissors!";
 }
 
-alert (playRound("scissors", getComputerChoice()));
+let play = () => {
+    for (let i = 0; i < 5; i++) 
+        alert(playRound("rock", getComputerChoice()));
+}
+
+play();
